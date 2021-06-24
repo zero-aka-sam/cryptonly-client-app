@@ -1,0 +1,188 @@
+.home .hero {
+  height: calc(100vh - 100px);
+  position: relative;
+  background: url(../../assets/images/what_is_cryptonlyfans.png);
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3em;
+}
+
+.home .hero p {
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home .hero img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.home .arrow {
+  display: grid;
+  place-items: center;
+  margin: 1.5em;
+}
+
+.home .arrow img {
+  width: 32px;
+  height: 32px;
+}
+
+.home .block_one {
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin: 1em 0;
+}
+
+.home .block_one p {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home .block_one img {
+  position: absolute;
+  bottom: 0em;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.token_card {
+  padding: 30px 20px;
+  background: #13131b;
+  border-radius: 3px;
+}
+
+.token_card_center {
+  padding: 50px 20px;
+  background: #13131b;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .card_wrapper > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5em;
+  margin: 2em 0 1em;
+}
+
+.home .rewards_wrapper > div {
+  padding: 1.25em 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.home .rewards_wrapper > div:not(:last-of-type) {
+  border-bottom: 0.7px solid #282828;
+}
+
+.home .rewards_wrapper > div p:nth-child(1) {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.home .roadmap_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  margin: 2em 0;
+}
+
+.home .roadmap_wrapper div {
+  padding: 30px 20px;
+  background: #13131b;
+  border-radius: 3px;
+  height: fit-content;
+}
+
+.home .roadmap_wrapper div > ul {
+  margin-top: 1em;
+  list-style: none;
+}
+
+.home .roadmap_wrapper div > ul > li {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.home .roadmap_wrapper div > ul > li > img {
+  margin-right: 1em;
+}
+
+.home .roadmap_wrapper div > ul > li > p {
+  text-align: start !important;
+}
+
+.home .disclaimer {
+  background: #13131b;
+  border-radius: 3px;
+  padding: 30px 20px;
+}
+
+.home .disclaimer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .profile_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  margin: 2em 0 1em;
+}
+
+.home .profile_wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  grid-gap: 2em;
+}
+
+.home .profile_wrapper > div img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .home .card_wrapper > div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .home .rewards_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .home .roadmap_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .home .profile_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .home .profile_wrapper > div {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home .card_wrapper > div {
+    grid-template-columns: 1fr;
+  }
+  .home .rewards_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .home .roadmap_wrapper {
+    grid-template-columns: 1fr;
+  }
+}

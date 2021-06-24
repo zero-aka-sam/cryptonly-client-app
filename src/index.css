@@ -1,0 +1,103 @@
+@font-face {
+  src: url(./assets/fonts/Futura\ Book\ font.ttf);
+  font-family: "futura_bk_ft";
+}
+
+@font-face {
+  src: url(./assets/fonts/Futura\ Extra\ Black\ font.ttf);
+  font-family: "futura_ext_bk_ft";
+}
+
+@font-face {
+  src: url(./assets/fonts/Futura\ Heavy\ font.ttf);
+  font-family: "futura_hv_ft";
+}
+
+@font-face {
+  src: url(./assets/fonts/futura\ medium\ bt.ttf);
+  font-family: "futura_md_bt";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #00000a;
+}
+
+a {
+  text-decoration: none;
+  font-family: "futura_hv_ft";
+}
+
+.primary_btn {
+  background: #ffffff;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #9e35fe;
+  padding: 10px 25px;
+  font-family: "futura_md_bt";
+  cursor: pointer;
+}
+
+.title {
+  font-family: "futura_ext_bk_ft";
+  font-weight: 950;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.content_title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  font-family: "futura_hv_ft";
+}
+
+.content_block {
+  width: 60%;
+  margin: 2em auto;
+}
+
+.padding_box {
+  padding: 0 70px;
+}
+
+@media (max-width: 992px) {
+  .padding_box {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  .padding_box {
+    padding: 0 2em;
+  }
+  .content_block {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .padding_box {
+    padding: 0 1em;
+  }
+  .content_block {
+    width: 80%;
+  }
+  .primary_btn {
+    padding: 8px 1em;
+  }
+}

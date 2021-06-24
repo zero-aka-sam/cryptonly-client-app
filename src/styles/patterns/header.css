@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header .logo {
+  width: 124px;
+  height: 70px;
+}
+
+.header .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header .modal {
+  position: absolute;
+  top: 110px;
+  right: 70px;
+  z-index: 1;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px 20px;
+  background: #13131b;
+  border-radius: 3px;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.header .modal a {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "futura_md_bt";
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 200ms ease-in-out;
+}
+
+.header .modal a:not(:last-of-type) {
+  margin-bottom: 1.25em;
+}
+
+.header .modal.active {
+  visibility: visible;
+  height: fit-content;
+  opacity: 1;
+  transition: height 300ms ease-in-out, opacity 400ms ease-in-out;
+}
+
+.header .modal.active a {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+  transition-delay: 300ms;
+}
+
+@media (max-width: 992px) {
+  .header .modal {
+    right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .header .modal {
+    right: 2em;
+  }
+}
+@media (max-width: 576px) {
+  .header .modal {
+    right: 1em;
+    width: 70%;
+  }
+}

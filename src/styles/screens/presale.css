@@ -1,0 +1,38 @@
+.presale .hero {
+  height: calc(100vh - 100px);
+  position: relative;
+  background: url(../../assets/images/what_is_cryptonlyfans.png);
+  background-size: cover;
+  background-position: center; 
+  background-position: center;
+  margin-bottom: 3em;
+}
+
+.presale .hero p {
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.presale .hero img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.presale .arrow {
+  display: grid;
+  place-items: center;
+  margin: 1.5em;
+}
+
+.presale .arrow img {
+  width: 32px;
+  height: 32px;
+}
+
+.presale .presale_block > div {
+  margin-bottom: 1.5em;
+}

@@ -1,0 +1,91 @@
+.crypto .hero {
+  height: calc(100vh - 100px);
+  position: relative;
+  background: url(../../assets/images/what_is_cryptonlyfans.png);
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  margin-bottom: 3em;
+}
+
+.crypto .hero p {
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.crypto .hero img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.crypto .arrow {
+  display: grid;
+  place-items: center;
+  margin: 1.5em;
+}
+
+.crypto .arrow img {
+  width: 32px;
+  height: 32px;
+}
+
+.crypto .block .block_content {
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin: 1em 0;
+}
+
+.crypto .block .block_content > p {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.crypto .block center {
+  margin-bottom: 1.25em;
+}
+
+.crypto .block > p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.crypto .profile_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  margin: 2em 0 1em;
+}
+
+.crypto .profile_wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  grid-gap: 2em;
+}
+
+.crypto .profile_wrapper > div img {
+  width: 100%;
+}
+
+.crypto .profile > p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .crypto .profile_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .crypto .profile_wrapper > div {
+    width: 70%;
+  }
+}
