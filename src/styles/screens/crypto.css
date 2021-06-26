@@ -33,7 +33,7 @@
   height: 32px;
 }
 
-.crypto .block .block_content {
+.crypto .block .block_one {
   height: 400px;
   background-size: cover;
   background-attachment: fixed;
@@ -41,7 +41,7 @@
   margin: 1em 0;
 }
 
-.crypto .block .block_content > p {
+.crypto .block .block_one > p {
   position: absolute;
   bottom: 2em;
   left: 50%;

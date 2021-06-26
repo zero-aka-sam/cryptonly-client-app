@@ -43,6 +43,8 @@
   .footer > div a {
     margin-right: 0;
     margin-bottom: 1em;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .footer > div a:not(:last-of-type) {

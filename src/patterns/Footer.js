@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className="footer padding_box">
       <div className="links">
-        <Link to="/">Contact Us</Link>
+        <Link to="/contact_us">Contact Us</Link>
         <Link to="/">Cookie Policy</Link>
         <Link to="/">Terms of Service</Link>
         <Link to="/">Privacy Policy</Link>

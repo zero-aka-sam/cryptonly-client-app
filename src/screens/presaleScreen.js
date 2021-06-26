@@ -33,8 +33,8 @@ const PresaleScreen = ({ pageScroll }) => {
         <Text>Presale Supply = 100,000,000,000</Text>
         <Text> Minimum Purchase = 0.01 BNB</Text>
         <Text>Maximum Purchase = 10 BNB</Text>
-        <Text>Presale Price: 1BNB = 20,000,000 SYMP Tokens</Text>
-        <Text>Public Release Price: 1BNB = 10,000,000 SYMP Tokens</Text>
+        <Text>Presale Price: 1BNB = 20,000,000 CRYPTONLYFANZ Tokens</Text>
+        <Text>Public Release Price: 1BNB = 10,000,000 CRYPTONLYFANZ Tokens</Text>
       </div>
 
       <div>
@@ -44,7 +44,7 @@ const PresaleScreen = ({ pageScroll }) => {
 
       <Text>How does the presale work?</Text>
       <Text>
-        Our presale contract will instantly transfer your SYMP Tokens directly
+        Our presale contract will instantly transfer your CRYPTONLYFANZ Tokens directly
         to your Trustwallet or Metamask wallet.
       </Text>
     </div>
@@ -84,7 +84,7 @@ const PresaleScreen = ({ pageScroll }) => {
 
       <div>
         <Text>Step 6:</Text>
-        <Text>Send BNB to the SYMP Token Presale Contract address:</Text>
+        <Text>Send BNB to the CRYPTONLYFANZ Token Presale Contract address:</Text>
       </div>
 
       <div>
@@ -92,7 +92,7 @@ const PresaleScreen = ({ pageScroll }) => {
         <Text>Step 7:</Text>
         <Text>
           Once your transaction is confirmed, our Presale Contract will
-          instantly send your SYMP Tokens to your Metamask wallet which your BNB
+          instantly send your CRYPTONLYFANZ Tokens to your Metamask wallet which your BNB
           was sent from.
         </Text>
       </div>
@@ -100,7 +100,7 @@ const PresaleScreen = ({ pageScroll }) => {
       <div>
         <Text>Step 8:</Text>
         <Text>
-          In your Metamask wallet click on custom token and add the SYMP Token
+          In your Metamask wallet click on custom token and add the CRYPTONLYFANZ Token
           contract address
         </Text>
       </div>
@@ -111,7 +111,7 @@ const PresaleScreen = ({ pageScroll }) => {
           You may need to enter the following details if they are not
           automatically generated
         </Text>
-        <Text>Symbol: SYMP</Text>
+        <Text>Symbol: CRYPTONLYFANZ</Text>
         <Text>Decimals: 18</Text>
       </div>
     </div>
@@ -147,7 +147,7 @@ const PresaleScreen = ({ pageScroll }) => {
       <div>
         <Text>Step 5:</Text>
         <Text>
-          Send BSC (BEP-20) to the SYMP Token Presale Contract address:
+          Send BSC (BEP-20) to the CRYPTONLYFANZ Token Presale Contract address:
         </Text>
       </div>
 
@@ -156,7 +156,7 @@ const PresaleScreen = ({ pageScroll }) => {
         <Text>Step 6:</Text>
         <Text>
           Once your transaction is confirmed, our Presale Contract will
-          instantly send your SYMP Tokens to your Trustwallet which your BSC was
+          instantly send your CRYPTONLYFANZ Tokens to your Trustwallet which your BSC was
           sent from.
         </Text>
       </div>
@@ -164,7 +164,7 @@ const PresaleScreen = ({ pageScroll }) => {
       <div>
         <Text>Step 7:</Text>
         <Text>
-          In your Trustwallet wallet add a custom token and add the SYMP Token
+          In your Trustwallet wallet add a custom token and add the CRYPTONLYFANZ Token
           contract address
         </Text>
       </div>
@@ -175,7 +175,7 @@ const PresaleScreen = ({ pageScroll }) => {
           You may need to enter the following details if they are not
           automatically generated
         </Text>
-        <Text>Symbol: SYMP</Text>
+        <Text>Symbol: CRYPTONLYFANZ</Text>
         <Text>Decimals: 18</Text>
       </div>
     </div>

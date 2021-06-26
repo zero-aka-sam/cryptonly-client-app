@@ -99,34 +99,57 @@ const HomeScreen = ({ pageScroll }) => {
       <p className="content_title">What makes CRYPTONLYFANZ unique?</p>
       <div className="padding_box">
         <TokenCard
-          titleOne="5%"
+          // titleOne="5%"
           titleTwo="Token Rewards"
           content="We care about community and 1% of every transaction distributed to COF holders proportion to there holding."
         />
         <TokenCard
-          titleOne="Verified"
-          titleTwo="Creator Profiles"
+          titleOne="Verified Creator Profiles"
+          // titleTwo="Creator Profiles"
           content="We authenticate content creator and subscriber identification for legal age, seamlessly and accurately through our online portal."
         />
-        <TokenCard
-          titleOne="Fast Payouts &"
-          titleTwo="Lower Commision"
-          content="We host creator content free of commissions. Creators that will accept COF as a payment method will have 0% commission on their earnings."
+          <TokenCard
+          titleOne="Instant ID verification%"
+          // titleTwo="Token Rewards"
+          content="No prevent fake profiles and make Cryptonlyfanz fully secure, we provide users Instant ID
+verification. Get verified under 5 Minutes.
+"
         />
-        <TokenCard
-          titleOne="VIP"
-          titleTwo="Messaging"
+         <TokenCard
+          titleOne="VIP Messaging"
+          // titleTwo=""
           content="Subscribers can attain VIP status after spending US $500.00 on content. Once you’re a VIP our content creators can identify you quickly in their inbox and give you the treatment you’ve earned."
         />
-        <TokenCard
-          titleOne="Premium"
+         <TokenCard
+          // titleOne="Premium"
           titleTwo="Video chat"
           content="Requesting paid video chat time is an option and at the discretion of content providers to enable, decline or accept."
         />
         <TokenCard
-          titleOne="Just for"
-          titleTwo="18+"
-          content="We reward fans with 5% back in SYMP Token on their purchases. This allows them to use their SYMP throughout the site"
+          titleOne="Fast Payouts and 0% commissions"
+          // titleTwo="Lower Commision"
+          content="We host creator content free of commissions. Creators that will accept COF as a payment method will have 0% commission on their earnings."
+        />
+        <TokenCard
+          titleOne="Accept all major cryptos"
+          // titleTwo="Token Rewards"
+          content="Apart from COF token, users/content creators can use BTC, ETH, USDT and DOGE as a payment
+method with 15% withdrawal commission. This commission will decrease as the user base on
+the platform increases."
+        />
+         <TokenCard
+          titleOne="In-Buit Exchange"
+          // titleTwo="Token Rewards"
+          content="Content sellers can convert their earnings to major crypto like BTC, ETH, USDT or DOGE using
+In-Built exchange.
+"
+        />
+        <TokenCard
+          titleOne="Exclusively Made for 18+ only"
+          // titleTwo="18+"
+          content=" Cryptonlyfanz is exclusively made for 18+ content only. Connect with your favourite creators like
+never before.
+"
         />
       </div>
     </div>
@@ -163,7 +186,7 @@ const HomeScreen = ({ pageScroll }) => {
           <TokenCard
             titleOne="Legitimate"
             titleTwo="Use case"
-            content="COF will be used throughout our CRYPTONLYFANS social network. Read our whitepaper to know in depth."
+            content="COF will be used throughout our CRYPTONLYFANZ social network. Read our whitepaper to know in depth."
           />
           <TokenCard
             titleOne="Low Cost"
@@ -173,7 +196,7 @@ const HomeScreen = ({ pageScroll }) => {
           <TokenCard
             titleOne="Instant"
             titleTwo="Rewards"
-            content="2% of each transaction goes to COF holders, proportional to their holdings and their shares in COF"
+            content="1% of each transaction goes to COF holders, proportional to their holdings and their shares in COF"
           />
         </div>
       </div>
@@ -275,27 +298,26 @@ const HomeScreen = ({ pageScroll }) => {
             <li>
               <img src={check} alt="check" />
               <Text>
-                Develop the CRYPTONLYFANS social network base features
+                Develop the Cryptonlyfanz social network base features
               </Text>
             </li>
             <li>
               <img src={check} alt="check" />
               <Text>
-                Internal testing of features (posting, likes, comments,
-                messaging, profile setup etc.)
+                Internal testing of features (posting, likes, comments, messaging, profile setup etc.)
               </Text>
             </li>
             <li>
               <img src={check} alt="check" />
-              <Text>Develop the premium bio-links page</Text>
+v              <Text>Develop the premium bio-links page</Text>
             </li>
             <li>
-              <img src={check} alt="check" />
+              <img src={clock} alt="clock" />
               <Text>Integration of crypto payment gateways</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>VIP messaging feature in development</Text>
+              <Text> VIP messaging/Video Calling feature in development</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
@@ -303,15 +325,23 @@ const HomeScreen = ({ pageScroll }) => {
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>18+ profile filter in development</Text>
+              <Text>Integration with Instant ID verification</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Further expand our influencer network</Text>
+              <Text>Shecduled launch for mid August</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Commence our marketing strategy</Text>
+              <Text> Further expand our influencer network</Text>
+            </li>
+            <li>
+              <img src={clock} alt="clock" />
+              <Text>Launching COF NFT marketplace V1.0</Text>
+            </li>
+            <li>
+              <img src={clock} alt="clock" />
+              <Text>Increase our marketing Campaign</Text>
             </li>
           </ul>
         </div>
@@ -321,19 +351,19 @@ const HomeScreen = ({ pageScroll }) => {
           </Text>
           <ul>
             <li>
-              <img src={check} alt="check" />
+              <img src={clock} alt="clock" />
               <Text>COF token deployed to mainnet Audit</Text>
             </li>
             <li>
-              <img src={check} alt="check" />
+              <img src={clock} alt="clock" />
               <Text>Launched COF BEP-20 Token</Text>
             </li>
             <li>
-              <img src={check} alt="check" />
+              <img src={clock} alt="clock" />
               <Text>Created Whitepaper</Text>
             </li>
             <li>
-              <img src={check} alt="check" />
+              <img src={clock} alt="clock" />
               <Text>Launched presale</Text>
             </li>
             <li>
@@ -351,7 +381,7 @@ const HomeScreen = ({ pageScroll }) => {
           </ul>
         </div>
       </div>
-      <div className="padding_box">
+      {/* <div className="padding_box">
         <div className="disclaimer">
           <div>
             <p className="content_title">Disclaimer</p>
@@ -393,8 +423,8 @@ const HomeScreen = ({ pageScroll }) => {
             financial decisions.
           </Text>
         </div>
-      </div>
-    </div>
+      </div> */}
+     </div>
   );
 
   return (

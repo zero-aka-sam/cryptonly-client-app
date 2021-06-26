@@ -28,6 +28,7 @@ const Block = ({ title, image }) => {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
+        marginBottom: "28px",
       }}
     >
       <img src={down_arrow} alt="arrow" />
@@ -53,7 +54,7 @@ const CryptonlyfansScreen = (pageScroll) => {
         NO MORE FAKE PROFILES
       </center>
       <Text>
-        SYMP.FANS is an exclusive creator network. We manually verify every
+        CRYPTONLYFANZ is an exclusive creator network. We manually verify every
         creator profile on signup. No more fake profiles!
       </Text>
       <div className="arrow">
@@ -114,11 +115,12 @@ const CryptonlyfansScreen = (pageScroll) => {
 
   const renderTokenRewards = (
     <div >
-      <Block title="5% SYMP TOKEN REWARDS" image={symp_rewards} />
-      <center className="content_title">REWARD ACTIVE FANS</center>
+      <Block title="Video chat" image={symp_rewards} />
+      {/* <center className="content_title">REWARD ACTIVE FANS</center> */}
       <Text>
-        We reward fans with 5% back in SYMP on their purchases. This allows them
-        to use their SYMP throughout the site
+        Requesting paid video chat time is an option and at the discretion of content providers to
+enable, decline or accept.
+
       </Text>
       <div className="arrow">
         <img src={down_arrow} alt="arrow" />
@@ -128,7 +130,7 @@ const CryptonlyfansScreen = (pageScroll) => {
 
   const renderNotFor18 = (
     <div >
-      <Block title="NOT JUST FOR 18+" image={not_just} />
+      <Block title="Exclusively for 18+ Users" image={not_just} />
       <center className="content_title">SUITED FOR ALL CREATORS</center>
       <Text>
         Our platform is open to all categories of influencers. Fans will have an
