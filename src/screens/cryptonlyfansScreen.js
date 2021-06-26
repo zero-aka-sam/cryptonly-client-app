@@ -82,16 +82,16 @@ const CryptonlyfansScreen = (pageScroll) => {
 
   const renderPremiumBioLinkPage = (
     <div >
-      <Block title="PREMIUM BIO-LINK PAGE" image={premium_bio} />
+      <Block  image={premium_bio} />
       <center className="content_title">EXCLUSIVE ACCESS</center>
       <Text>
-        Every influencer will receive access to an exclusive premium bio-link
+        Every influencer will receive access to an Exclusive bio-link
         page at no cost!
       </Text>
-      <Text style={{ marginTop: "1em" }}>
+      {/* <Text style={{ marginTop: "1em" }}>
         Play the video below to see an example that showcases our premium link
         options
-      </Text>
+      </Text> */}
       <div className="arrow">
         <img src={down_arrow} alt="arrow" />
       </div>

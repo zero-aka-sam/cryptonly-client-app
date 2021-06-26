@@ -67,7 +67,7 @@
 .crypto .profile_wrapper > div {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 340px;
   margin: 0 auto;
   grid-gap: 2em;
 }
