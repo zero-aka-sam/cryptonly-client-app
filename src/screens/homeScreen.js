@@ -109,7 +109,7 @@ const HomeScreen = ({ pageScroll }) => {
           content="We authenticate content creator and subscriber identification for legal age, seamlessly and accurately through our online portal."
         />
           <TokenCard
-          titleOne="Instant ID verification%"
+          titleOne="Instant ID verification"
           // titleTwo="Token Rewards"
           content="No prevent fake profiles and make Cryptonlyfanz fully secure, we provide users Instant ID
 verification. Get verified under 5 Minutes.
@@ -179,7 +179,7 @@ never before.
 
   const renderCofToken = (
     <div>
-      <Block title="What is COF Tokens?" image={what_is_cof_tokens} />
+      <Block title="What is COF Token ?" image={what_is_cof_tokens} />
       {renderContentTwo}
       <div className="card_wrapper">
         <div className="padding_box">
