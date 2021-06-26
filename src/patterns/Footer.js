@@ -5,10 +5,9 @@ import { Link } from "../components";
 
 //IMPORTING MEDIA ASSETS
 
-import facebook from "../assets/icons/facebook.svg";
-import githup from "../assets/icons/github.svg";
-import linkedin from "../assets/icons/linkedin.svg";
-import youtube from "../assets/icons/youtube.svg";
+import instagram from "../assets/icons/instagram.svg";
+import tiktok from "../assets/icons/tiktok.svg";
+import telegram from "../assets/icons/telegram.svg";
 import twitter from "../assets/icons/twitter.svg";
 
 const Footer = () => {
@@ -21,11 +20,20 @@ const Footer = () => {
         <Link to="/">Privacy Policy</Link>
       </div>
       <div>
-        <img src={facebook} alt="facebook" />
-        <img src={githup} alt="githup" />
-        <img src={linkedin} alt="linkedin" />
-        <img src={youtube} alt="youtube" />
+        <a href="https://twitter.com/cryptonlyfanz" >
         <img src={twitter} alt="twitter" />
+        </a>
+        <a  href="https://www.instagram.com/cryptonlyfanz/" >
+           <img src={instagram} alt="ig"/>
+        </a>
+        <a href="http://tiktok.com/cryptonlyfanz">
+                  <img src={tiktok} alt="tt"  />
+
+        </a>
+        <a href="http://t.me/cryptonlyfanz">
+                  <img src={telegram} alt="tg"  />
+        </a>
+
       </div>
     </div>
   );

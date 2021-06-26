@@ -3,14 +3,19 @@ import "../styles/patterns/header.css";
 
 import { Button, Link } from "../components";
 
+import {useHistory } from 'react-router-dom'
+
 //IMPORTING MEDIA ASSETS
 
 import logo from "../assets/images/logo.jpg";
 import menu from "../assets/icons/menu.svg";
 import whitepaper from "../assets/pdf/whitepaper.pdf";
+import { Route } from "react-router-dom";
 
 const Header = () => {
   const [modal, setModal] = useState(false);
+
+  const history = useHistory()
 
   const renderModal = (
     <div className={modal ? "modal active" : "modal"}>
@@ -46,7 +51,7 @@ const Header = () => {
         </Link>
       </div>
       <div>
-        <Button className="primary_btn">Buy COF</Button>
+        <Button onClick={() => history.push('/presale')} className="primary_btn">Buy COF</Button>
         <img
           src={menu}
           alt="menu"

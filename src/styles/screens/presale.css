@@ -8,6 +8,8 @@
   margin-bottom: 3em;
 }
 
+
+
 .presale .hero p {
   position: absolute;
   bottom: 3em;
@@ -35,4 +37,69 @@
 
 .presale .presale_block > div {
   margin-bottom: 1.5em;
+}
+
+.upcome {
+  color: #9e35fe;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-family: "futura_hv_ft";
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+
+
+.sale .heero {
+  height: calc(100vh - 100px);
+  position: relative;
+  background: url(../../assets/images/sample-one.png);
+  background-size: cover;
+  background-position: center; 
+  background-position: center;
+  margin-bottom: 3em;
+}
+
+
+.block_one {
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin: 1em 0;
+}
+
+.block_one p {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.block_one img {
+  position: absolute;
+  bottom: 0em;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+
+
+
+
+.sale .heero p {
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sale .heero img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }

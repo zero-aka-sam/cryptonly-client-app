@@ -62,17 +62,19 @@ const HomeScreen = ({ pageScroll }) => {
       style={{ backgroundPositionY: `${pageScroll * 0.5}px` }}
     >
       <img src={down_arrow} alt="arrow" />
-      <p className="title">What is CRYPTONLYFANS?</p>
+      <p className="title">What is CRYPTONLYFANZ?</p>
     </div>
   );
 
   const renderContentOne = (
     <div className="content_block">
       <Text>
-        We are a decentralised social network connecting exclusive influencer
-        content to fans like never before. We are reinventing content
-        subscriptions by using DeFi to better serve both the influencer and
-        fans.
+        Cryptonlyfanz is a decentralized social network dedicated to providing a platform that connects
+        exclusive influencer content and their fanz like never before. Our decentralized platform is
+        powered by COF Token; a cryptocurrency with embedded features that sustains a low-cost
+        environment where content creators and subscribers can connect with little interference from a
+        third party.
+        To learn more please reference our “Whitepaper” document listed in the site menu
       </Text>
     </div>
   );
@@ -80,46 +82,49 @@ const HomeScreen = ({ pageScroll }) => {
   const renderContentTwo = (
     <div className="content_block">
       <Text>
-        As the cryptocurrency of the CRYPTONLYFANS platform, COF Token will
-        incentivize influencers and their fans by providing additional benefits
-        and enhanced user engagement. As the CRYPTONLYFANS user base grows so
-        will the demand for COF leading to an active token economy from which
-        all holders will benefit.
+        As the cryptocurrency of the CRYPTONLYFANZ platform, COF Token will
+        COF Token is the preferred cryptocurrency used to pay for content on our platform. We do  
+        accept additional leading cryptocurrencies as payment, however its internally converted and
+        will be displayed as COF Token in your user account. The demand, utility and transparency of
+        processing totals engage a financial system that supports our decentralized platform. This allows
+        you the subscriber, the content creator and the investor to be enriched by your interactions
+        with cryptonlyfanz.com and your token of choice; COF.
+
       </Text>
     </div>
   );
 
   const renderCard = (
     <div className="card_wrapper">
-      <p className="content_title">What makes CRYPTONLYFANS unique?</p>
+      <p className="content_title">What makes CRYPTONLYFANZ unique?</p>
       <div className="padding_box">
         <TokenCard
           titleOne="5%"
           titleTwo="Token Rewards"
-          content="We reward fans with 5% back in SYMP Token on their purchases. This allows them to use their SYMP throughout the site"
+          content="We care about community and 1% of every transaction distributed to COF holders proportion to there holding."
         />
         <TokenCard
           titleOne="Verified"
           titleTwo="Creator Profiles"
-          content="We reward fans with 5% back in SYMP Token on their purchases. This allows them to use their SYMP throughout the site"
+          content="We authenticate content creator and subscriber identification for legal age, seamlessly and accurately through our online portal."
         />
         <TokenCard
           titleOne="Fast Payouts &"
           titleTwo="Lower Commision"
-          content="We reward fans with 5% back in SYMP Token on their purchases. This allows them to use their SYMP throughout the site"
+          content="We host creator content free of commissions. Creators that will accept COF as a payment method will have 0% commission on their earnings."
         />
         <TokenCard
           titleOne="VIP"
           titleTwo="Messaging"
-          content="We reward fans with 5% back in SYMP Token on their purchases. This allows them to use their SYMP throughout the site"
+          content="Subscribers can attain VIP status after spending US $500.00 on content. Once you’re a VIP our content creators can identify you quickly in their inbox and give you the treatment you’ve earned."
         />
         <TokenCard
           titleOne="Premium"
-          titleTwo="BIO-LINK Page"
-          content="We reward fans with 5% back in SYMP Token on their purchases. This allows them to use their SYMP throughout the site"
+          titleTwo="Video chat"
+          content="Requesting paid video chat time is an option and at the discretion of content providers to enable, decline or accept."
         />
         <TokenCard
-          titleOne="Not Just for"
+          titleOne="Just for"
           titleTwo="18+"
           content="We reward fans with 5% back in SYMP Token on their purchases. This allows them to use their SYMP throughout the site"
         />
@@ -182,33 +187,28 @@ const HomeScreen = ({ pageScroll }) => {
         <div>
           <Text variant="primary">6% Total Tax</Text>
           <Text>
-            Buy and hold SYMP and you will automatically get more in your
-            wallet. No need for farming or staking.
+            Just BUY and HOLD COF tokens in your wallet and earn passively.
           </Text>
         </div>
         <div>
-          <Text variant="primary">2% To Holders</Text>
+          <Text variant="primary">3% Goes to Marketing & Development.</Text>
           <Text>
-            The more our SYMP.FANS network expands the more often SYMP will be
-            used throughout the site, resulting in a continuous distribution to
-            your wallet.
+            3% to a marketing and development wallet. This tax supports further development of the
+            platform and the marketing required to fuel the long-term sustainability of this decentralized
+            platform and COF Token investment strategy.
           </Text>
         </div>
         <div>
-          <Text variant="primary">2% To Liquidity</Text>
+          <Text variant="primary">2% Goes Back to liquidity</Text>
           <Text>
-            By distributing 2% back to the SYMP liquidity pool we aim to keep
-            the market liquid, the liquidity pool balanced, and the price
-            stable.
+            2% back to the COF liquidity Pool. We aim to keep the speculative market liquid. A balanced
+            liquidity pool will aid systemic efficiency and sustainability.
           </Text>
         </div>
         <div>
-          <Text variant="primary">2% To COF Fund</Text>
+          <Text variant="primary">1% Goes to Holders</Text>
           <Text>
-            COF Fund aims to give back to our community every month in the form
-            of COF giveaways and more! This will be a transparent and community
-            driven fund that will allow our community to have a say in how the
-            COF Fund is allocated.
+            1% goes to holders wallet according to there holdings.. The more you hold the more you will earn.
           </Text>
           <Text style={{ marginTop: "1.5em" }}>
             There will be various options the community will vote on such as:
@@ -234,28 +234,28 @@ const HomeScreen = ({ pageScroll }) => {
           <TokenCard
             variant="stats"
             titleOne="2%"
-            content="Rewards Per Transaction"
-          />
-          <TokenCard
-            variant="stats"
-            titleOne="2%"
             content="Added To Liquidity"
           />
           <TokenCard
             variant="stats"
-            titleOne="50,00,000,0000"
+            titleOne="1%"
+            content="To Holders"
+          />
+          <TokenCard
+            variant="stats"
+            titleOne="10,00,000,0000"
             content="Total Supply"
           />
-          <TokenCard variant="stats" titleOne="Locked LP" content="12 Months" />
+          <TokenCard variant="stats" titleOne="3%" content="To marketing/development" />
         </div>
       </div>
-      <Text>SYMP Contract Address:</Text>
+      <Text>Cryptonlyfanz Contract Address:</Text>
       <Text style={{ marginTop: "1.5em" }}>
-        0x8801638949eaD3B5bF8dBB2E2AAdadCc2fB011de
+        Coming soon
       </Text>
-      <center style={{ marginTop: "1.5em" }}>
+      {/* <center style={{ marginTop: "1.5em" }}>
         <Button className="primary_btn">HOW TO BUY COF</Button>
-      </center>
+      </center> */}
     </div>
   );
 
@@ -265,7 +265,7 @@ const HomeScreen = ({ pageScroll }) => {
       <div className="roadmap_wrapper">
         <div>
           <Text fontSize="20px" variant="primary">
-            CRYPTONLYFANS Roadmap
+            CRYPTONLYFANZ Roadmap
           </Text>
           <ul>
             <li>
@@ -322,6 +322,10 @@ const HomeScreen = ({ pageScroll }) => {
           <ul>
             <li>
               <img src={check} alt="check" />
+              <Text>COF token deployed to mainnet Audit</Text>
+            </li>
+            <li>
+              <img src={check} alt="check" />
               <Text>Launched COF BEP-20 Token</Text>
             </li>
             <li>
@@ -334,11 +338,11 @@ const HomeScreen = ({ pageScroll }) => {
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Reach 10,000 holders</Text>
+              <Text>Reach 30,000 holders</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Launch SYMP giveaway</Text>
+              <Text>Launch Cryptonlyfanz giveaway</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />

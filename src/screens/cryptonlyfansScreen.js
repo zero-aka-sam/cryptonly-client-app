@@ -8,10 +8,10 @@ import "../styles/screens/crypto.css";
 
 import down_arrow from "../assets/icons/down_arrow.svg";
 
-import reward_your_wallet from "../assets/images/reward_your_wallet.png"
-import tokenomics_and_statistics from "../assets/images/tokenomics_and_statistics.png"
-import roadmap_and_fundraiser from "../assets/images/roadmap_and_fundraiser.png"
-import what_is_cof_tokens from "../assets/images/what_is_cof_tokens.png"
+import symp_rewards from "../assets/images/symp_rewards.png"
+import not_just from "../assets/images/not_just.png"
+import premium_bio from "../assets/images/premium_bio.png"
+import fast_payouts from "../assets/images/fast_payouts.png"
 import what_is_cryptonlyfans from "../assets/images/what_is_cryptonlyfans.png"
 
 import cof2 from "../assets/images/cof2.png"
@@ -22,13 +22,15 @@ import cof5 from "../assets/images/cof5.png"
 const Block = ({ title, image }) => {
   return (
     <div
-      className="block_content"
+      className="block_one"
       style={{
         background: `url(${image})`,
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
+        backgroundPosition: "center",
       }}
     >
+      <img src={down_arrow} alt="arrow" />
       <p className="title">{title}</p>
     </div>
   );
@@ -78,8 +80,8 @@ const CryptonlyfansScreen = (pageScroll) => {
   );
 
   const renderPremiumBioLinkPage = (
-    <div className="block">
-      <Block title="PREMIUM BIO-LINK PAGE" image={reward_your_wallet} />
+    <div >
+      <Block title="PREMIUM BIO-LINK PAGE" image={premium_bio} />
       <center className="content_title">EXCLUSIVE ACCESS</center>
       <Text>
         Every influencer will receive access to an exclusive premium bio-link
@@ -96,8 +98,8 @@ const CryptonlyfansScreen = (pageScroll) => {
   );
 
   const renderFatsPayouts = (
-    <div className="block">
-      <Block title="FAST PAYOUTS & LOWER COMMISSION" image={tokenomics_and_statistics} />
+    <div>
+      <Block title="FAST PAYOUTS & LOWER COMMISSION" image={fast_payouts} />
       <center className="content_title">MORE MONEY FASTER</center>
       <Text>
         We provide a lower threshold and commission charge for influencer
@@ -111,8 +113,8 @@ const CryptonlyfansScreen = (pageScroll) => {
   );
 
   const renderTokenRewards = (
-    <div className="block">
-      <Block title="5% SYMP TOKEN REWARDS" image={roadmap_and_fundraiser} />
+    <div >
+      <Block title="5% SYMP TOKEN REWARDS" image={symp_rewards} />
       <center className="content_title">REWARD ACTIVE FANS</center>
       <Text>
         We reward fans with 5% back in SYMP on their purchases. This allows them
@@ -125,8 +127,8 @@ const CryptonlyfansScreen = (pageScroll) => {
   );
 
   const renderNotFor18 = (
-    <div className="block">
-      <Block title="NOT JUST FOR 18+" image={what_is_cof_tokens} />
+    <div >
+      <Block title="NOT JUST FOR 18+" image={not_just} />
       <center className="content_title">SUITED FOR ALL CREATORS</center>
       <Text>
         Our platform is open to all categories of influencers. Fans will have an
@@ -140,7 +142,7 @@ const CryptonlyfansScreen = (pageScroll) => {
   );
 
   const renderVipMesaage = (
-    <div className="block">
+    <div>
       <Block title="VIP MESSAGING" image={what_is_cryptonlyfans} />
       <center className="content_title">GET PERSONAL</center>
       <Text>

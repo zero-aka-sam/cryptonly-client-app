@@ -6,7 +6,9 @@ import "../styles/screens/presale.css";
 
 import down_arrow from "../assets/icons/down_arrow.svg";
 
+
 const PresaleScreen = ({ pageScroll }) => {
+
   const renderHero = (
     <div
       className="hero"
@@ -23,7 +25,7 @@ const PresaleScreen = ({ pageScroll }) => {
         <p className="content_title">INSTANT PRESALE GUIDE</p>
       </div>
       <div>
-        <Text>Total SYMP Token Supply = 500,000,000,000</Text>
+        <Text>Total CRYPTONLYFANZ Token Supply = 100,000,000,000</Text>
       </div>
 
       <div>
@@ -179,17 +181,37 @@ const PresaleScreen = ({ pageScroll }) => {
     </div>
   );
 
+  const Block = ({ title, image }) => {
+  return (
+    <div
+      className="block_content"
+      style={{
+        background: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <p className="title">{title}</p>
+    </div>
+  );
+};
+
+  const renderImageOne = (
+    <div className='sale'>
+      <h1 className='upcome'>COMING SOON</h1>
+       <div className="heero">
+    </div>
+   </div>
+  );
+
+
+
+
   return (
     <div className="presale">
       {renderHero}
-      <div className="presale_block">
-        <div>
-          <Text>SYMP Token Presale Contract Address:</Text>
-        </div>
-        <Text>
-          0xCb31101105fbE82D5f18D4CcE84e914Bf628F45E Note: When sending, change
-          the "Gas Limit" amount to 299999
-        </Text>
+      {renderImageOne}
+      {/* <div className="presale_block">
       </div>
       <div className="arrow">
         <img src={down_arrow} alt="arrow" />
@@ -201,8 +223,8 @@ const PresaleScreen = ({ pageScroll }) => {
       {renderMetamaskGuide}
       <div className="arrow">
         <img src={down_arrow} alt="arrow" />
-      </div>
-      {renderTrustWalletGuide}
+      </div> */}
+      {/* {renderTrustWalletGuide} */}
     </div>
   );
 };
