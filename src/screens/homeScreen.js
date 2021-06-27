@@ -138,7 +138,7 @@ method with 15% withdrawal commission. This commission will decrease as the user
 the platform increases."
         />
          <TokenCard
-          titleOne="In-Buit Exchange"
+          titleOne="In-Built Exchange"
           // titleTwo="Token Rewards"
           content="Content sellers can convert their earnings to major crypto like BTC, ETH, USDT or DOGE using
 In-Built exchange.
