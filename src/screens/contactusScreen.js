@@ -102,7 +102,7 @@ const ContactusScreen = ({ pageScroll }) => {
   );
 
   const renderForm = (
-    <form onSubmit={handleSubmit} className="forms">
+    <form  className="forms">
       <div>
         <Text fontSize="16px">Name *</Text>
         <p>
@@ -138,7 +138,7 @@ const ContactusScreen = ({ pageScroll }) => {
       {renderContactInfo}
       <div style={{ marginTop: "2em" }} className="padding_box">
         <Button disabled={isLoad}
-                style={{ opacity: isLoad ? "0.5" : "1" }} className="primary_btn">Submit</Button>
+              onClick={handleSubmit}  style={{ opacity: isLoad ? "0.5" : "1" }} className="primary_btn">Submit</Button>
       </div>
     </div>
   );
