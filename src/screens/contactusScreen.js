@@ -8,14 +8,15 @@ import down_arrow from "../assets/icons/down_arrow.svg";
 import map from "../assets/images/map.png";
 
 import * as emailjs from "emailjs-com";
+  import 'react-toastify/dist/ReactToastify.css';
 
 //Importing notification package
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const initailState = {
   email: "",
   message: "",
-    name: "",
+  name: "",
 };
 
 const ContactusScreen = ({ pageScroll }) => {
@@ -23,8 +24,9 @@ const ContactusScreen = ({ pageScroll }) => {
     const [formData, setFormData] = useState(initailState);
      const [isLoad, setIsLoad] = useState(false);
 
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
 
   function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -48,7 +50,7 @@ const ContactusScreen = ({ pageScroll }) => {
     const val = validate(formData);
 
     //if email id is invalid
-    if (formData.email !== "") {
+    if (formData.email !== "" || res=== false) {
       if (!res) toast.error("Invalid Email Address");
     }
 
@@ -71,10 +73,11 @@ const ContactusScreen = ({ pageScroll }) => {
           "service_tcpk59u",
           "template_51befeh",
           templateParams,
-          "user_pA3AcBwuZrONMUHbSNCIo"
+          "user_SRK0OwIolmaMfO8SGRjH9"
         )
         .then(
           (result) => {
+                console.log(result)
             toast.dark(
               <div>
                 <p style={{ marginBottom: 8 }}>Thanks for contacting us</p>
@@ -110,19 +113,19 @@ const ContactusScreen = ({ pageScroll }) => {
       <div>
         <Text fontSize="16px">Name *</Text>
         <p>
-          <input value={formData.name}onChange={handleChange} placeholder="Enter your name" />
+          <input name='name'  onChange={handleChange} placeholder="Enter your name" />
         </p>
       </div>
       <div>
         <Text fontSize="16px">Email Address *</Text>
         <p>
-          <input value={formData.email} onChange={handleChange} placeholder="Enter your email address" />
+          <input name='email' onChange={handleChange} placeholder="Enter your email address" />
         </p>
       </div>
       <div>
         <Text fontSize="16px">Message</Text>
         <p>
-          <textarea value={formData.message} onChange={handleChange}  rows="4" placeholder="Enter your message" />
+          <textarea name='message' onChange={handleChange}  rows="4" placeholder="Enter your message" />
         </p>
       </div>
     </form>
@@ -138,6 +141,7 @@ const ContactusScreen = ({ pageScroll }) => {
   );
   return (
     <div className="contactus">
+      <ToastContainer/>
       {renderHero}
       {renderContactInfo}
       <div style={{ marginTop: "2em" }} className="padding_box">
