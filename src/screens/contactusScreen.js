@@ -15,6 +15,7 @@ import { toast } from "react-toastify";
 const initailState = {
   email: "",
   message: "",
+    name: "",
 };
 
 const ContactusScreen = ({ pageScroll }) => {
@@ -33,7 +34,8 @@ const ContactusScreen = ({ pageScroll }) => {
   function validate() {
     if (
       formData.message === "" ||
-      formData.email === ""
+      formData.email === "" ||
+      formData.name === ""
     ) {
       toast.error("please fill the empty fields");
       return false;
@@ -54,11 +56,13 @@ const ContactusScreen = ({ pageScroll }) => {
       setIsLoad(true);
       const {
         email,
+        name,
        message
       } = formData;
 
       let templateParams = {
         email,
+        name,
         message,
       };
 
@@ -106,7 +110,7 @@ const ContactusScreen = ({ pageScroll }) => {
       <div>
         <Text fontSize="16px">Name *</Text>
         <p>
-          <input placeholder="Enter your name" />
+          <input value={formData.name}onChange={handleChange} placeholder="Enter your name" />
         </p>
       </div>
       <div>
@@ -137,8 +141,9 @@ const ContactusScreen = ({ pageScroll }) => {
       {renderHero}
       {renderContactInfo}
       <div style={{ marginTop: "2em" }} className="padding_box">
-        <Button disabled={isLoad}
-              onClick={handleSubmit}  style={{ opacity: isLoad ? "0.5" : "1" }} className="primary_btn">Submit</Button>
+        <Button disabled={isLoad} onClick={handleSubmit}
+          style={{ opacity: isLoad ? "0.5" : "1" }}
+          className="primary_btn">Submit</Button>
       </div>
     </div>
   );
