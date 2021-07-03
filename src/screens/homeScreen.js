@@ -10,14 +10,14 @@ import down_arrow from "../assets/icons/down_arrow.svg";
 import chevron_down from "../assets/icons/chevron_down.svg";
 import check from "../assets/icons/check.svg";
 import clock from "../assets/icons/clock.svg";
-import cof2 from "../assets/images/cof2.png"
-import cof3 from "../assets/images/cof3.png"
-import cof4 from "../assets/images/cof4.png"
-import cof5 from "../assets/images/cof5.png"
-import reward_your_wallet from "../assets/images/reward_your_wallet.png"
-import tokenomics_and_statistics from "../assets/images/tokenomics_and_statistics.png"
-import roadmap_and_fundraiser from "../assets/images/roadmap_and_fundraiser.png"
-import what_is_cof_tokens from "../assets/images/what_is_cof_tokens.png"
+import cof2 from "../assets/images/cof2.png";
+import cof3 from "../assets/images/cof3.png";
+import cof4 from "../assets/images/cof4.png";
+import cof5 from "../assets/images/cof5.png";
+import reward_your_wallet from "../assets/images/reward_your_wallet.png";
+import tokenomics_and_statistics from "../assets/images/tokenomics_and_statistics.png";
+import roadmap_and_fundraiser from "../assets/images/roadmap_and_fundraiser.png";
+import what_is_cof_tokens from "../assets/images/what_is_cof_tokens.png";
 
 const Block = ({ title, image }) => {
   return (
@@ -37,7 +37,6 @@ const Block = ({ title, image }) => {
 };
 
 const TokenCard = ({ titleOne, titleTwo, content, variant }) => {
- 
   const renderOne = (
     <div className="token_card">
       <Text variant="primary">{titleOne}</Text>
@@ -69,13 +68,14 @@ const HomeScreen = ({ pageScroll }) => {
 
   const renderContentOne = (
     <div className="content_block">
-      <Text style={{  fontSize: '3 rem',fontWeight: 800}}>
-        Cryptonlyfanz is a decentralized social network dedicated to providing a platform that connects
-        exclusive influencer content and their fanz like never before. Our decentralized platform is
-        powered by COF Token; a cryptocurrency with embedded features that sustains a low-cost
-        environment where content creators and subscribers can connect with little interference from a
-        third party.
-        To learn more please reference our “Whitepaper” document listed in the site menu
+      <Text style={{ fontSize: "3 rem", fontWeight: 800 }}>
+        Cryptonlyfanz is a decentralized social network dedicated to providing a
+        platform that connects exclusive influencer content and their fanz like
+        never before. Our decentralized platform is powered by COF Token; a
+        cryptocurrency with embedded features that sustains a low-cost
+        environment where content creators and subscribers can connect with
+        little interference from a third party. To learn more please reference
+        our “Whitepaper” document listed in the site menu
       </Text>
     </div>
   );
@@ -83,14 +83,15 @@ const HomeScreen = ({ pageScroll }) => {
   const renderContentTwo = (
     <div className="content_block">
       <Text>
-        As the cryptocurrency of the CRYPTONLYFANZ platform, COF Token will
-        COF Token is the preferred cryptocurrency used to pay for content on our platform. We do  
-        accept additional leading cryptocurrencies as payment, however its internally converted and
-        will be displayed as COF Token in your user account. The demand, utility and transparency of
-        processing totals engage a financial system that supports our decentralized platform. This allows
-        you the subscriber, the content creator and the investor to be enriched by your interactions
-        with cryptonlyfanz.com and your token of choice; COF.
-
+        As the cryptocurrency of the CRYPTONLYFANZ platform, COF Token will COF
+        Token is the preferred cryptocurrency used to pay for content on our
+        platform. We do accept additional leading cryptocurrencies as payment,
+        however its internally converted and will be displayed as COF Token in
+        your user account. The demand, utility and transparency of processing
+        totals engage a financial system that supports our decentralized
+        platform. This allows you the subscriber, the content creator and the
+        investor to be enriched by your interactions with cryptonlyfanz.com and
+        your token of choice; COF.
       </Text>
     </div>
   );
@@ -109,19 +110,19 @@ const HomeScreen = ({ pageScroll }) => {
           // titleTwo="Creator Profiles"
           content="We authenticate content creator and subscriber identification for legal age, seamlessly and accurately through our online portal."
         />
-          <TokenCard
+        <TokenCard
           titleOne="Instant ID verification"
           // titleTwo="Token Rewards"
           content="No prevent fake profiles and make Cryptonlyfanz fully secure, we provide users Instant ID
 verification. Get verified under 5 Minutes.
 "
         />
-         <TokenCard
+        <TokenCard
           titleOne="VIP Messaging"
           // titleTwo=""
           content="Subscribers can attain VIP status after spending US $500.00 on content. Once you’re a VIP our content creators can identify you quickly in their inbox and give you the treatment you’ve earned."
         />
-         <TokenCard
+        <TokenCard
           // titleOne="Premium"
           titleTwo="Video chat"
           content="Requesting paid video chat time is an option and at the discretion of content providers to enable, decline or accept."
@@ -138,7 +139,7 @@ verification. Get verified under 5 Minutes.
 method with 15% withdrawal commission. This commission will decrease as the user base on
 the platform increases."
         />
-         <TokenCard
+        <TokenCard
           titleOne="Built-in Exchange"
           // titleTwo="Token Rewards"
           content="Content sellers can convert their earnings to major crypto like BTC, ETH, USDT or DOGE using
@@ -217,22 +218,25 @@ never before.
         <div>
           <Text variant="primary">3% Goes to Marketing & Development.</Text>
           <Text>
-            3% to a marketing and development wallet. This tax supports further development of the
-            platform and the marketing required to fuel the long-term sustainability of this decentralized
-            platform and COF Token investment strategy.
+            3% to a marketing and development wallet. This tax supports further
+            development of the platform and the marketing required to fuel the
+            long-term sustainability of this decentralized platform and COF
+            Token investment strategy.
           </Text>
         </div>
         <div>
           <Text variant="primary">2% Goes Back to liquidity</Text>
           <Text>
-            2% back to the COF liquidity Pool. We aim to keep the speculative market liquid. A balanced
-            liquidity pool will aid systemic efficiency and sustainability.
+            2% back to the COF liquidity Pool. We aim to keep the speculative
+            market liquid. A balanced liquidity pool will aid systemic
+            efficiency and sustainability.
           </Text>
         </div>
         <div>
           <Text variant="primary">1% Goes to Holders</Text>
           <Text>
-            1% goes to holders wallet according to there holdings.. The more you hold the more you will earn.
+            1% goes to holders wallet according to there holdings.. The more you
+            hold the more you will earn.
           </Text>
           <Text style={{ marginTop: "1.5em" }}>
             There will be various options the community will vote on such as:
@@ -246,7 +250,10 @@ never before.
 
   const renderStatistics = (
     <div>
-      <Block title="Tokenomics & Statistics" image={tokenomics_and_statistics} />
+      <Block
+        title="Tokenomics & Statistics"
+        image={tokenomics_and_statistics}
+      />
       <div className="card_wrapper">
         <div className="padding_box">
           <TokenCard variant="stats" titleOne="COF" content="Token Symbol" />
@@ -260,23 +267,21 @@ never before.
             titleOne="2%"
             content="Added To Liquidity"
           />
+          <TokenCard variant="stats" titleOne="1%" content="To Holders" />
           <TokenCard
             variant="stats"
-            titleOne="1%"
-            content="To Holders"
-          />
-          <TokenCard
-            variant="stats"
-            titleOne="10,00,000,0000"
+            titleOne="10,000,000,0000"
             content="Total Supply"
           />
-          <TokenCard variant="stats" titleOne="3%" content="To marketing/development" />
+          <TokenCard
+            variant="stats"
+            titleOne="3%"
+            content="To marketing/development"
+          />
         </div>
       </div>
       <Text>Cryptonlyfanz Contract Address:</Text>
-      <Text style={{ marginTop: "1.5em" }}>
-        Coming soon
-      </Text>
+      <Text style={{ marginTop: "1.5em" }}>Coming soon</Text>
       {/* <center style={{ marginTop: "1.5em" }}>
         <Button className="primary_btn">HOW TO BUY COF</Button>
       </center> */}
@@ -305,12 +310,13 @@ never before.
             <li>
               <img src={check} alt="check" />
               <Text>
-                Internal testing of features (posting, likes, comments, messaging, profile setup etc.)
+                Internal testing of features (posting, likes, comments,
+                messaging, profile setup etc.)
               </Text>
             </li>
             <li>
-              <img src={check} alt="check" />
-v              <Text>Develop the premium bio-links page</Text>
+              <img src={check} alt="check" />v{" "}
+              <Text>Develop the premium bio-links page</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
@@ -330,7 +336,7 @@ v              <Text>Develop the premium bio-links page</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Shecduled launch for mid August</Text>
+              <Text>Scheduled launch for mid August</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
@@ -342,7 +348,7 @@ v              <Text>Develop the premium bio-links page</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Increase our marketing Campaign</Text>
+              <Text>Increase our Marketing and Influencer campaigns</Text>
             </li>
           </ul>
         </div>
@@ -353,7 +359,7 @@ v              <Text>Develop the premium bio-links page</Text>
           <ul>
             <li>
               <img src={clock} alt="clock" />
-              <Text>COF token deployed to mainnet Audit</Text>
+              <Text>COF token deployed to main net Audit</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
@@ -365,11 +371,15 @@ v              <Text>Develop the premium bio-links page</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Launched presale</Text>
+              <Text>Launch pre-sale July 8, 2021</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Reach 30,000 holders</Text>
+              <Text>Reach 2500 holders</Text>
+            </li>
+            <li>
+              <img src={clock} alt="clock" />
+              <Text>1500 Telegram Members</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
@@ -377,12 +387,24 @@ v              <Text>Develop the premium bio-links page</Text>
             </li>
             <li>
               <img src={clock} alt="clock" />
-              <Text>Exchange listings</Text>
+              <Text>Listed on three exchanges</Text>
+            </li>
+            <li>
+              <img src={clock} alt="clock" />
+              <Text>Reach 5000 holders</Text>
+            </li>
+            <li>
+              <img src={clock} alt="clock" />
+              <Text>5000 Telegram memberss</Text>
+            </li>
+            <li>
+              <img src={clock} alt="clock" />
+              <Text>Listed on five exchanges</Text>
             </li>
           </ul>
         </div>
       </div>
-      {/* <div className="padding_box">
+      <div className="padding_box">
         <div className="disclaimer">
           <div>
             <p className="content_title">Disclaimer</p>
@@ -392,11 +414,24 @@ v              <Text>Develop the premium bio-links page</Text>
             fontSize="12px"
             style={{ marginTop: "1.5em", textAlign: "start" }}
           >
-            Photos used throughout the site are of not affiliation with owner.
-            All credit and rights to the photos are to @cindyprado
-            https://www.instagram.com/cindyprado/
+            Admins/Mods will never message you first on TG! Meaning if you get a
+            message with a contract address, please bring it to the team’s
+            attention and do your due diligence. The address will be pinned to
+            the top of TG, as well asreleased on our website/socials for your
+            confirmation. The address released will only be utilized for the
+            pre-sale and pre-sale only! Please do not attempt to send any sort
+            of funds without doing the above process as it may result in a loss!
+            Any other questions and/or concerns on purchasing BNB or the
+            pre-sale itself please feel free to visit us on our TG channel.
           </Text>
           <Text
+            fontSize="12px"
+            style={{ marginTop: "1.5em", textAlign: "center" }}
+          >
+            https://t.me/cryptonlyfanz
+          </Text>
+
+          {/* <Text
             fontSize="12px"
             style={{ marginTop: "1.5em", textAlign: "start" }}
           >
@@ -422,10 +457,10 @@ v              <Text>Develop the premium bio-links page</Text>
             visitor indemnifies the website creators and all members of project
             creation and administration, from any responsibility regarding their
             financial decisions.
-          </Text>
+          </Text> */}
         </div>
-      </div> */}
-     </div>
+      </div>
+    </div>
   );
 
   return (

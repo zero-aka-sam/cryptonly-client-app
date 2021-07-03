@@ -58,7 +58,7 @@ const PresaleScreen = ({ pageScroll }) => {
           setIsLoading(false);
         }
       );
-  }
+  };
 
   const renderForm = (
     <div className="forms">
@@ -136,7 +136,7 @@ const PresaleScreen = ({ pageScroll }) => {
         </div>
       </form>
     </div>
-  )
+  );
 
   const renderHero = (
     <div
@@ -146,30 +146,46 @@ const PresaleScreen = ({ pageScroll }) => {
       <img src={down_arrow} alt="arrow" />
       <p className="title">COF TOKEN PRESALE</p>
     </div>
-  )
+  );
 
   const renderPresaleGuide = (
     <div className="presale_block">
       <div>
-        <p className="content_title">INSTANT PRESALE GUIDE</p>
+        <p className="content_title">OurPRE-SALE 08/JULY/2021</p>
       </div>
-      <div>
+      {/* <div>
         <Text>Total SYMP Token Supply = 500,000,000,000</Text>
-      </div>
+      </div> */}
 
       <div>
-        <Text>PRESALE TERMS</Text>
-        <Text>Presale Supply = 100,000,000,000</Text>
-        <Text> Minimum Purchase = 0.01 BNB</Text>
-        <Text>Maximum Purchase = 10 BNB</Text>
-        <Text>Presale Price: 1BNB = 20,000,000 SYMP Tokens</Text>
-        <Text>Public Release Price: 1BNB = 10,000,000 SYMP Tokens</Text>
+        <Text>Similar to our grass-roots realization</Text>
+        <Text>
+          from the moment of the original idea to the official start to
+          CRYPTONLYFANZ project,
+        </Text>
+        <Text>
+          we recognized that the best way to start any successful initiative was
+          to do it organically;
+        </Text>
+        <Text>
+          ensuring a strong foundation that will provide sustainability and
+          longevity.
+        </Text>
+        <Text>
+          We realized that the best and fairest way of achieving this would be
+          to hold a pre-sale prior to launching to the public,
+        </Text>
+        <Text>
+          effectively protecting the integrity of the project’s mission
+          statement, while also providing an all-inclusive forum to promote and
+          provide camaraderie for all.
+        </Text>
       </div>
-
+      {/* 
       <div>
         <Text>80% of presale will be locked in liquidity for 12months</Text>
         <Text> 20% of presale will be used for marketing the launch</Text>
-      </div>
+      </div> */}
 
       <Text>How does the presale work?</Text>
       <Text>
@@ -177,32 +193,36 @@ const PresaleScreen = ({ pageScroll }) => {
         to your Trustwallet or Metamask wallet.
       </Text>
     </div>
-  )
+  );
 
   const renderMetamaskGuide = (
     <div className="presale_block">
       <div>
-        <p className="content_title">Metamask Guide</p>
+        <p className="content_title">3 Waves of PRE-SALE</p>
       </div>
       <div>
-        <Text> Step 1:</Text>
-        <Text>Download Metamask mobile app or chrome extension.</Text>
-      </div>
-
-      <div>
-        <Text>Step 2:</Text>
-        <Text>Setup BSC on your Metamask.</Text>
-        <Text>You can follow this tutorial</Text>
-      </div>
-
-      <div>
-        <Text>Step 3:</Text>
+        <Text> Wave 1:</Text>
         <Text>
-          Transfer your BNB from an exchange to your Metamask wallet. (BEP20)
+          Max $50k for celebrity/high profile buyers up to $1MM At $.00142 per
+          Token,
         </Text>
+        <Text>vesting 25% per month with 25% unlocked immediately</Text>
       </div>
 
       <div>
+        <Text> Wave 2:</Text>
+        <Text>
+          Max 70 BNB wave up to $1MM for $.00154 per Token vesting 25%
+        </Text>
+        <Text>per month with 25% unlocked immediately</Text>
+      </div>
+
+      <div>
+        <Text>Wave 3:</Text>
+        <Text>Max 5 BNB wave up to $1MM for $.00154 per Token</Text>
+      </div>
+
+      {/* <div>
         <Text>Step 4:</Text>
         <Text>Decide the amount of BNB to send based on our terms above.</Text>
       </div>
@@ -242,38 +262,45 @@ const PresaleScreen = ({ pageScroll }) => {
         </Text>
         <Text>Symbol: SYMP</Text>
         <Text>Decimals: 18</Text>
-      </div>
+      </div> */}
     </div>
   );
 
   const renderTrustWalletGuide = (
     <div className="presale_block">
       <div>
-        <p className="content_title">Trust Wallet Guide</p>
+        <p className="content_title">SIGN UP Steps</p>
       </div>
       <div>
         <Text> Step 1:</Text>
-        <Text>Download the Trust Wallet app</Text>
+        <Text>Complete Sign up form below</Text>
       </div>
 
       <div>
         <Text>Step 2:</Text>
         <Text>
-          Purchase BSC (BEP-20) using TrustWallet or transfer from your existing
-          exchange wallet
+          An e-mail and/or text confirmation with proper verification on our end
+          will occur quickly
         </Text>
       </div>
 
       <div>
         <Text>Step 3:</Text>
-        <Text>Decide the amount of BSC to send based on our terms above.</Text>
+        <Text>
+          After the information is provided you’ll be sent a wallet address to
+          provide the funds to
+        </Text>
       </div>
 
       <div>
         <Text>Step 4:</Text>
-        <Text>When sending, change the "Gas Limit" amount to 299999.</Text>
+        <Text>
+          Once the funds are received you’ll be manually air dropped the tokens
+          into your wallet
+        </Text>
+        <Text>based on the above wave you’ve opted in to</Text>
       </div>
-      <div>
+      {/* <div>
         <Text>Step 5:</Text>
         <Text>
           Send BSC (BEP-20) to the SYMP Token Presale Contract address:
@@ -306,6 +333,9 @@ const PresaleScreen = ({ pageScroll }) => {
         </Text>
         <Text>Symbol: SYMP</Text>
         <Text>Decimals: 18</Text>
+      </div> */}
+      <div className="arrow">
+        <img src={down_arrow} alt="arrow" />
       </div>
     </div>
   );
@@ -313,7 +343,7 @@ const PresaleScreen = ({ pageScroll }) => {
   return (
     <div className="presale">
       {renderHero}
-      <div className="presale_block">
+      {/* <div className="presale_block">
         <div>
           <Text>SYMP Token Presale Contract Address:</Text>
         </div>
@@ -321,10 +351,10 @@ const PresaleScreen = ({ pageScroll }) => {
           0xCb31101105fbE82D5f18D4CcE84e914Bf628F45E Note: When sending, change
           the "Gas Limit" amount to 299999
         </Text>
-      </div>
-      <div className="arrow">
+      </div> */}
+      {/* <div className="arrow">
         <img src={down_arrow} alt="arrow" />
-      </div>
+      </div> */}
       {renderPresaleGuide}
       <div className="arrow">
         <img src={down_arrow} alt="arrow" />
