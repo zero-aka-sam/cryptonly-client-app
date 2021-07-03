@@ -44,22 +44,11 @@ const CookieScreen = ({ pageScroll }) => {
 };
   return (
     <div>
-      <h1 style={styles.header}>TERMS & CONDITIONS</h1>
+      <h1 style={styles.header}>Cookies Policy</h1>
       <Block
-      title='Interpretation'
-      text='The words of which the initial letter is capitalized have meanings defined under the following
-conditions. The following definitions shall have the same meaning regardless of whether they
-appear in singular or in plural.
-'
+      title='Cookies Usage'
+      text={`Your Internet browser has the in-built facility for storing small text files - "cookies" - that hold information which allows a website to recognize your account. We use cookies to save your preferences and login information, and provide personalized functionality. You can reject cookies by changing your browser settings, but be aware that this will disable some of the functionality on the CryptOnlyFanz website. More information about cookies can be found at https://en.wikipedia.org/wiki/HTTP_cookie`}
       />
-      <Block
-      title='Definitions'
-      text='The words of which the initial letter is capitalized have meanings defined under the following
-conditions. The following definitions shall have the same meaning regardless of whether they
-appear in singular or in plural.
-
-'
-    />
     </div>
   )
 }
