@@ -11,82 +11,81 @@ import CookieScreen from "./screens/cookieScreen";
 import TermScreen from "./screens/termScreen";
 import PolicyScreen from "./screens/policyScreen";
 
-
 const styles = {
   backdrop: {
-  backgroundColor: 'rgba(0, 0, 0, 0.86)',
-  position: 'absolute',
-  bottom: '1',
-    left: '1',
-    width: '100%',
-    height: '100%',
-    zIndex: '1',
-    scrollX: 'none',
-    scrollY: 'none',
-    display: 'grid',
-    alignItems: 'center',
-    justifyContent: 'center'
+    backgroundColor: "rgba(0, 0, 0, 0.86)",
+    position: "absolute",
+    bottom: "1",
+    left: "1",
+    width: "100%",
+    height: "100%",
+    zIndex: "1",
+    scrollX: "none",
+    scrollY: "none",
+    display: "grid",
+    alignItems: "center",
+    justifyContent: "center",
   },
-  form : {
-    color: 'white',
-    fontFamily: 'futura_hv_ft',
-    fontSize: '12px',
-    backgroundColor: '#00000A',
-    padding: '32px',
-    borderRadius: '5px',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '32px',
-    justifyContent: 'center',
-    textAlign: 'center',
-    margin: '32px'
+  form: {
+    color: "white",
+    fontFamily: "futura_hv_ft",
+    fontSize: "12px",
+    backgroundColor: "#00000A",
+    padding: "32px",
+    borderRadius: "5px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "32px",
+    justifyContent: "center",
+    textAlign: "center",
+    margin: "32px",
   },
   button: {
-    height: '48px',
-     color: 'white',
-    fontFamily: 'futura_md_bt',
-    backgroundColor: '#9E35FE',
-    outline: 'none',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer'
-  }
-}
+    height: "48px",
+    color: "white",
+    fontFamily: "futura_md_bt",
+    backgroundColor: "#9E35FE",
+    outline: "none",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+  },
+};
 const Backdrop = ({ setConsent }) => {
-  
-  useEffect(() => {
-  }, [])
-  
+  useEffect(() => {}, []);
+
   return (
     <div style={styles.backdrop}>
       <div style={styles.form}>
-        <h1>click to validate you are over the age of 18</h1>
-        <button onClick={(e) => {
-          e.preventDefault(); setConsent(true);  
-}} style={styles.button}>I agree and enter</button>
+        <h1>Click to validate you are over the age of 18</h1>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setConsent(true);
+          }}
+          style={styles.button}
+        >
+          I agree and enter
+        </button>
       </div>
     </div>
-  )
-}
-
-
+  );
+};
 
 function App() {
   const [pageScroll, setPageScroll] = useState(0);
   const [consent, setConsent] = useState(false);
 
   useEffect(() => {
-  
-
     window.addEventListener("scroll", () => {
       let offset = window.pageYOffset;
       setPageScroll(offset);
     });
-  },[consent]);
+  }, [consent]);
 
   return (
     <Router>
-      {!consent && <Backdrop setConsent={setConsent}/>}
+      {!consent && <Backdrop setConsent={setConsent} />}
       <Header />
       <Switch>
         <Route path="/" exact>
@@ -101,13 +100,13 @@ function App() {
         <Route path="/cryptonlyfanz" exact>
           <CryptonlyfansScreen pageScroll={pageScroll} />
         </Route>
-         <Route path="/cookie_policies" exact>
+        <Route path="/cookie_policies" exact>
           <CookieScreen pageScroll={pageScroll} />
         </Route>
-          <Route path="/terms" exact>
+        <Route path="/terms" exact>
           <TermScreen pageScroll={pageScroll} />
         </Route>
-         <Route path="/policies" exact>
+        <Route path="/policies" exact>
           <PolicyScreen pageScroll={pageScroll} />
         </Route>
       </Switch>

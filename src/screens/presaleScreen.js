@@ -62,37 +62,38 @@ const PresaleScreen = ({ pageScroll }) => {
 
   const styles = {
     form: {
-      display: 'flex',
-      margin: '32px',
-      padding: '32px',
-      flexDirection: 'column',
-      gap: '32px',
+      display: "flex",
+      margin: "32px",
+      padding: "32px",
+      flexDirection: "column",
+      gap: "32px",
     },
     label: {
-      marginBottom: '18px',
-      textAlign: 'left'
-    }
-    ,
+      marginBottom: "18px",
+      textAlign: "left",
+    },
     input: {
-    width: '100%',
-    background: '#0b090e',
-    borderRadius: '5px',
-    padding: '10px 20px',
-    fontSize: '14px',
-    fontFamily: "futura_bk_ft",
-    color: '#fff',
-    border: 'none',
-    outline: 'none',
-    letterSpacing: '0.07em'
-  }
-  }
-  
+      width: "100%",
+      background: "#0b090e",
+      borderRadius: "5px",
+      padding: "10px 20px",
+      fontSize: "14px",
+      fontFamily: "futura_bk_ft",
+      color: "#fff",
+      border: "none",
+      outline: "none",
+      letterSpacing: "0.07em",
+    },
+  };
+
   const renderForm = (
-    <div >
-      <p style={{margin: '32px'}}className='content_title'>PRE SALE Sign Up</p>
+    <div>
+      <p style={{ margin: "32px" }} className="content_title">
+        PRE SALE Sign Up
+      </p>
       <form style={styles.form} onSubmit={handleSubmit}>
         <div>
-          <Text  style={styles.label}>Name *</Text>
+          <Text style={styles.label}>Name *</Text>
           <p>
             <input
               style={styles.input}
@@ -106,11 +107,12 @@ const PresaleScreen = ({ pageScroll }) => {
           </p>
         </div>
         <div>
-          <Text style={styles.label} fontSize="16px">Email Address *</Text>
+          <Text style={styles.label} fontSize="16px">
+            Email Address *
+          </Text>
           <p>
             <input
-                            style={styles.input}
-
+              style={styles.input}
               type="email"
               name="email"
               value={formData.email}
@@ -121,11 +123,12 @@ const PresaleScreen = ({ pageScroll }) => {
           </p>
         </div>
         <div>
-          <Text style={styles.label} fontSize="16px">Contribution amount *</Text>
+          <Text style={styles.label} fontSize="16px">
+            Contribution amount *
+          </Text>
           <p>
             <input
-                            style={styles.input}
-
+              style={styles.input}
               type="number"
               name="amount"
               value={formData.amount === 0 ? "" : formData.amount}
@@ -136,11 +139,12 @@ const PresaleScreen = ({ pageScroll }) => {
           </p>
         </div>
         <div>
-          <Text style={styles.label} fontSize="16px">Note</Text>
+          <Text style={styles.label} fontSize="16px">
+            Note
+          </Text>
           <p>
             <textarea
-                            style={styles.input}
-
+              style={styles.input}
               rows="4"
               name="note"
               value={formData.note}
@@ -160,7 +164,7 @@ const PresaleScreen = ({ pageScroll }) => {
             className="primary_btn"
             type="submit"
             disabled={isLoading ? true : false}
-            style={{width: '180px'}}
+            style={{ width: "180px" }}
           >
             {isLoading
               ? "Loading..."
@@ -186,7 +190,7 @@ const PresaleScreen = ({ pageScroll }) => {
   const renderPresaleGuide = (
     <div className="presale_block">
       <div>
-        <p className="content_title">OurPRE-SALE 08/JULY/2021</p>
+        <p className="content_title">Our PRE-SALE 08/JULY/2021</p>
       </div>
       {/* <div>
         <Text>Total SYMP Token Supply = 500,000,000,000</Text>
@@ -222,11 +226,11 @@ const PresaleScreen = ({ pageScroll }) => {
         <Text> 20% of presale will be used for marketing the launch</Text>
       </div> */}
 
-      <Text>How does the presale work?</Text>
+      {/* <Text>How does the presale work?</Text>
       <Text>
         Our presale contract will instantly transfer your SYMP Tokens directly
         to your Trustwallet or Metamask wallet.
-      </Text>
+      </Text> */}
     </div>
   );
 

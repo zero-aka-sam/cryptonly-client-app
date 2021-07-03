@@ -216,7 +216,7 @@ never before.
           </Text>
         </div>
         <div>
-          <Text variant="primary">3% Goes to Marketing & Development.</Text>
+          <Text variant="primary">3% Goes to Marketing & Development</Text>
           <Text>
             3% to a marketing and development wallet. This tax supports further
             development of the platform and the marketing required to fuel the
@@ -270,7 +270,7 @@ never before.
           <TokenCard variant="stats" titleOne="1%" content="To Holders" />
           <TokenCard
             variant="stats"
-            titleOne="10,000,000,0000"
+            titleOne="10,000,000,000"
             content="Total Supply"
           />
           <TokenCard
