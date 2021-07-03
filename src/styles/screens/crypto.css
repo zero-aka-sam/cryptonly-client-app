@@ -1,9 +1,8 @@
 .crypto .hero {
   height: calc(100vh - 100px);
   position: relative;
-  background: url(../../assets/images/what_is_cryptonlyfans.png);
+  background: url(../../assets/images/cryptonlyfanz_hero.png);
   background-size: cover;
-  background-position: center;
   background-position: center;
   margin-bottom: 3em;
 }

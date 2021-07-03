@@ -37,10 +37,10 @@ const PresaleScreen = ({ pageScroll }) => {
 
     emailjs
       .send(
-        "zevocorp_service",
-        "template_qkkzygp",
-        templateParams,
-        "user_pA3AcBwuZrONMUHbSNCIo"
+         "service_m82lvre",
+          "template_bc09cml",
+          templateParams,
+          "user_GIBdBagcpQO842DYfWDKO"
       )
       .then(
         (result) => {

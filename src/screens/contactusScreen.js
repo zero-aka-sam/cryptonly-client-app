@@ -70,10 +70,10 @@ const ContactusScreen = ({ pageScroll }) => {
 
       emailjs
         .send(
-          "service_tcpk59u",
-          "template_51befeh",
+          "service_m82lvre",
+          "template_bc09cml",
           templateParams,
-          "user_SRK0OwIolmaMfO8SGRjH9"
+          "user_GIBdBagcpQO842DYfWDKO"
         )
         .then(
           (result) => {

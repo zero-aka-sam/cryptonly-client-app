@@ -12,7 +12,7 @@ import symp_rewards from "../assets/images/symp_rewards.png"
 import not_just from "../assets/images/not_just.png"
 import premium_bio from "../assets/images/premium_bio.png"
 import fast_payouts from "../assets/images/fast_payouts.png"
-import what_is_cryptonlyfans from "../assets/images/what_is_cryptonlyfans.png"
+import vip_messaging from "../assets/images/vip_messaging.png"
 
 import cof2 from "../assets/images/cof2.png"
 import cof3 from "../assets/images/cof3.png"
@@ -147,7 +147,7 @@ enable, decline or accept.
 
   const renderVipMesaage = (
     <div>
-      <Block title="VIP MESSAGING" image={what_is_cryptonlyfans} />
+      <Block title="VIP MESSAGING" image={vip_messaging} />
       <center className="content_title">GET PERSONAL</center>
       <Text>
         Influencers can set a fee for priority messaging allowing fans to send
