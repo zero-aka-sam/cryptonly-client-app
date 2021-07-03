@@ -181,7 +181,7 @@ never before.
 
   const renderCofToken = (
     <div>
-      <Block title="What is COF Token ?" image={what_is_cof_tokens} />
+      <Block title="What is COF Token?" image={what_is_cof_tokens} />
       {renderContentTwo}
       <div className="card_wrapper">
         <div className="padding_box">
