@@ -55,14 +55,14 @@ const styles = {
 const Backdrop = ({ setConsent }) => {
   
   useEffect(() => {
-          document.body.style.overflow = 'hidden'
   }, [])
   
   return (
     <div style={styles.backdrop}>
       <div style={styles.form}>
         <h1>click to validate you are over the age of 18</h1>
-        <button onClick={(e) => { e.preventDefault(); setConsent(true); document.body.style.overflowY = 'scroll'
+        <button onClick={(e) => {
+          e.preventDefault(); setConsent(true);  
 }} style={styles.button}>I agree and enter</button>
       </div>
     </div>

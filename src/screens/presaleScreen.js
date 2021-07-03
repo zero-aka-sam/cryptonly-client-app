@@ -60,14 +60,42 @@ const PresaleScreen = ({ pageScroll }) => {
       );
   };
 
+  const styles = {
+    form: {
+      display: 'flex',
+      margin: '32px',
+      padding: '32px',
+      flexDirection: 'column',
+      gap: '32px',
+    },
+    label: {
+      marginBottom: '18px',
+      textAlign: 'left'
+    }
+    ,
+    input: {
+    width: '100%',
+    background: '#0b090e',
+    borderRadius: '5px',
+    padding: '10px 20px',
+    fontSize: '14px',
+    fontFamily: "futura_bk_ft",
+    color: '#fff',
+    border: 'none',
+    outline: 'none',
+    letterSpacing: '0.07em'
+  }
+  }
+  
   const renderForm = (
-    <div className="forms">
-      <p className="content_title">CONTACT US</p>
-      <form onSubmit={handleSubmit}>
+    <div >
+      <p style={{margin: '32px'}}className='content_title'>CONTACT US</p>
+      <form style={styles.form} onSubmit={handleSubmit}>
         <div>
-          <Text fontSize="16px">Name *</Text>
+          <Text  style={styles.label}>Name *</Text>
           <p>
             <input
+              style={styles.input}
               type="text"
               name="username"
               value={formData.username}
@@ -78,9 +106,11 @@ const PresaleScreen = ({ pageScroll }) => {
           </p>
         </div>
         <div>
-          <Text fontSize="16px">Email Address *</Text>
+          <Text style={styles.label} fontSize="16px">Email Address *</Text>
           <p>
             <input
+                            style={styles.input}
+
               type="email"
               name="email"
               value={formData.email}
@@ -91,9 +121,11 @@ const PresaleScreen = ({ pageScroll }) => {
           </p>
         </div>
         <div>
-          <Text fontSize="16px">Contribution amount *</Text>
+          <Text style={styles.label} fontSize="16px">Contribution amount *</Text>
           <p>
             <input
+                            style={styles.input}
+
               type="number"
               name="amount"
               value={formData.amount === 0 ? "" : formData.amount}
@@ -104,9 +136,11 @@ const PresaleScreen = ({ pageScroll }) => {
           </p>
         </div>
         <div>
-          <Text fontSize="16px">Note</Text>
+          <Text style={styles.label} fontSize="16px">Note</Text>
           <p>
             <textarea
+                            style={styles.input}
+
               rows="4"
               name="note"
               value={formData.note}
@@ -126,6 +160,7 @@ const PresaleScreen = ({ pageScroll }) => {
             className="primary_btn"
             type="submit"
             disabled={isLoading ? true : false}
+            style={{width: '180px'}}
           >
             {isLoading
               ? "Loading..."
