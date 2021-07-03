@@ -90,7 +90,7 @@ const HomeScreen = ({ pageScroll }) => {
         your user account. The demand, utility and transparency of processing
         totals engage a financial system that supports our decentralized
         platform. This allows you the subscriber, the content creator and the
-        investor to be enriched by your interactions with cryptonlyfanz.com and
+        investor to be enriched by your interactions with CRYPTONLYFANZ.COM and
         your token of choice; COF.
       </Text>
     </div>
@@ -198,7 +198,8 @@ never before.
           <TokenCard
             titleOne="Instant"
             titleTwo="Rewards"
-            content="1% of each transaction goes to COF holders, proportional to their holdings and their shares in COF."
+            content="1% of each transaction goes to COF holders, proportional to their holdings and their shares in COF.
+            "
           />
         </div>
       </div>
