@@ -37,6 +37,7 @@ const Block = ({ title, image }) => {
 };
 
 const TokenCard = ({ titleOne, titleTwo, content, variant }) => {
+ 
   const renderOne = (
     <div className="token_card">
       <Text variant="primary">{titleOne}</Text>
@@ -68,7 +69,7 @@ const HomeScreen = ({ pageScroll }) => {
 
   const renderContentOne = (
     <div className="content_block">
-      <Text>
+      <Text style={{  fontSize: '3 rem',fontWeight: 800}}>
         Cryptonlyfanz is a decentralized social network dedicated to providing a platform that connects
         exclusive influencer content and their fanz like never before. Our decentralized platform is
         powered by COF Token; a cryptocurrency with embedded features that sustains a low-cost
@@ -101,7 +102,7 @@ const HomeScreen = ({ pageScroll }) => {
         <TokenCard
           // titleOne="5%"
           titleTwo="Token Rewards"
-          content="We care about community and 1% of every transaction distributed to COF holders proportion to there holding."
+          content="We care about community and 1% of every transaction distributed to COF holders proportional to their holdings."
         />
         <TokenCard
           titleOne="Verified Creator Profiles"
@@ -138,10 +139,10 @@ method with 15% withdrawal commission. This commission will decrease as the user
 the platform increases."
         />
          <TokenCard
-          titleOne="In-Built Exchange"
+          titleOne="Built-in Exchange"
           // titleTwo="Token Rewards"
           content="Content sellers can convert their earnings to major crypto like BTC, ETH, USDT or DOGE using
-In-Built exchange.
+Built-in exchange.
 "
         />
         <TokenCard

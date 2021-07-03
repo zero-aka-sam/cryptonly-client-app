@@ -5,4 +5,5 @@ export const colorPallet = {
   primaryText: "#FFFFFF",
   secondaryText: "#CCCCCC",
   background: "#00000A",
+  glow: "#9E66FE"
 };

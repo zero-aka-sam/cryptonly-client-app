@@ -7,10 +7,12 @@ import {useHistory } from 'react-router-dom'
 
 //IMPORTING MEDIA ASSETS
 
-import logo from "../assets/images/logo.jpg";
+import logo from "../assets/images/logo.png";
 import menu from "../assets/icons/menu.svg";
 import whitepaper from "../assets/pdf/whitepaper.pdf";
 import { Route } from "react-router-dom";
+
+import pdf from '../assets/pdf/whitepaper.pdf'
 
 const Header = () => {
   const [modal, setModal] = useState(false);
@@ -25,15 +27,18 @@ const Header = () => {
       <Link to="/presale" onClick={() => setModal(false)}>
         PRE SALE
       </Link>
-      <Link to="/cryptonlyfans" onClick={() => setModal(false)}>
-        CRYPTONLYFANS
+      <Link to="/cryptonlyfanz" onClick={() => setModal(false)}>
+        CRYPTONLYFANZ
       </Link>
       <a
         href={whitepaper}
         target="_blank"
         rel="noreferrer"
-        download
-        onClick={() => setModal(false)}
+        downlad
+        onClick={() => { 
+          window.open(pdf)
+          setModal(false)
+        }}
       >
         WHITEPAPER
       </a>

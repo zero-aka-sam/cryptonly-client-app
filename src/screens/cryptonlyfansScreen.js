@@ -19,6 +19,8 @@ import cof3 from "../assets/images/cof3.png"
 import cof4 from "../assets/images/cof4.png"
 import cof5 from "../assets/images/cof5.png"
 
+import "../styles/screens/contactus.css";
+
 const Block = ({ title, image }) => {
   return (
     <div
@@ -162,7 +164,7 @@ enable, decline or accept.
       {renderPremiumBioLinkPage}
       {renderFatsPayouts}
       {renderTokenRewards}
-      {renderNotFor18}
+      {/* {renderNotFor18} */}
       {renderVipMesaage}
     </div>
   );

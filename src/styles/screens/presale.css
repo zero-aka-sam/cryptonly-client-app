@@ -35,6 +35,14 @@
   height: 32px;
 }
 
+.forms {
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 .presale .presale_block > div {
   margin-bottom: 1.5em;
 }

@@ -29,7 +29,7 @@ function App() {
         <Route path="/contact_us" exact>
           <ContactusScreen pageScroll={pageScroll} />
         </Route>
-        <Route path="/cryptonlyfans" exact>
+        <Route path="/cryptonlyfanz" exact>
           <CryptonlyfansScreen pageScroll={pageScroll} />
         </Route>
       </Switch>

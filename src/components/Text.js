@@ -5,11 +5,11 @@ const Text = (props) => {
   const Styles = {
     primaryText: {
       fontWeight: "normal",
-      fontSize: props.fontSize || "16px",
+      fontSize: props.fontSize || "20px",
       lineHeight: "26px",
       letterSpacing: "0.05em",
       textTransform: "uppercase",
-      color: colorPallet.primaryText,
+      color: colorPallet.glow,
       fontFamily: "futura_md_bt",
       ...props.style,
     },

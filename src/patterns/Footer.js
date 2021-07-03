@@ -6,7 +6,7 @@ import { Link } from "../components";
 //IMPORTING MEDIA ASSETS
 
 import instagram from "../assets/icons/instagram.svg";
-import tiktok from "../assets/icons/tiktok.svg";
+import mail from "../assets/icons/mail.svg";
 import telegram from "../assets/icons/telegram.svg";
 import twitter from "../assets/icons/twitter.svg";
 
@@ -26,8 +26,8 @@ const Footer = () => {
         <a  href="https://www.instagram.com/cryptonlyfanz/" >
            <img src={instagram} alt="ig"/>
         </a>
-        <a href="http://tiktok.com/cryptonlyfanz">
-                  <img src={tiktok} alt="tt"  />
+        <a href="mailto:admin@cryptonlyfanz.com">
+                  <img src={mail} alt="tt"  />
 
         </a>
         <a href="http://t.me/cryptonlyfanz">
