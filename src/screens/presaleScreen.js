@@ -37,10 +37,10 @@ const PresaleScreen = ({ pageScroll }) => {
 
     emailjs
       .send(
-         "service_m82lvre",
-          "template_bc09cml",
-          templateParams,
-          "user_GIBdBagcpQO842DYfWDKO"
+        "service_m82lvre",
+        "template_bc09cml",
+        templateParams,
+        "user_GIBdBagcpQO842DYfWDKO"
       )
       .then(
         (result) => {
@@ -89,7 +89,7 @@ const PresaleScreen = ({ pageScroll }) => {
   
   const renderForm = (
     <div >
-      <p style={{margin: '32px'}}className='content_title'>CONTACT US</p>
+      <p style={{margin: '32px'}}className='content_title'>PRE SALE Sign Up</p>
       <form style={styles.form} onSubmit={handleSubmit}>
         <div>
           <Text  style={styles.label}>Name *</Text>
