@@ -7,6 +7,9 @@ import HomeScreen from "./screens/homeScreen";
 import PresaleScreen from "./screens/presaleScreen";
 import ContactusScreen from "./screens/contactusScreen";
 import CryptonlyfansScreen from "./screens/cryptonlyfansScreen";
+import CookieScreen from "./screens/cookieScreen";
+import TermScreen from "./screens/termScreen";
+import PolicyScreen from "./screens/policyScreen";
 
 
 const styles = {
@@ -97,6 +100,15 @@ function App() {
         </Route>
         <Route path="/cryptonlyfanz" exact>
           <CryptonlyfansScreen pageScroll={pageScroll} />
+        </Route>
+         <Route path="/cookie_policies" exact>
+          <CookieScreen pageScroll={pageScroll} />
+        </Route>
+          <Route path="/terms" exact>
+          <TermScreen pageScroll={pageScroll} />
+        </Route>
+         <Route path="/policies" exact>
+          <PolicyScreen pageScroll={pageScroll} />
         </Route>
       </Switch>
       <Footer />

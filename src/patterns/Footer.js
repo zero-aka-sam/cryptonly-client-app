@@ -15,9 +15,9 @@ const Footer = () => {
     <div className="footer padding_box">
       <div className="links">
         <Link to="/contact_us">Contact Us</Link>
-        <Link to="/">Cookie Policy</Link>
-        <Link to="/">Terms of Service</Link>
-        <Link to="/">Privacy Policy</Link>
+        <Link to="/cookie_policies">Cookie Policy</Link>
+        <Link to="/terms">Terms of Service</Link>
+        <Link to="/policies">Privacy Policy</Link>
       </div>
       <div>
         <a href="https://twitter.com/cryptonlyfanz" >
