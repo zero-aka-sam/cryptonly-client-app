@@ -242,8 +242,8 @@ const PresaleScreen = ({ pageScroll }) => {
       <div>
         <Text> Wave 1:</Text>
         <Text>
-          Max $50k for celebrity/high profile buyers up to $1MM At $.00142 per
-          Token,
+          Max 150 BNB for celebrity/high profile buyers up to $1MM At $.00142
+          per Token,
         </Text>
         <Text>vesting 25% per month with 25% unlocked immediately</Text>
       </div>

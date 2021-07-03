@@ -198,7 +198,7 @@ never before.
           <TokenCard
             titleOne="Instant"
             titleTwo="Rewards"
-            content="1% of each transaction goes to COF holders, proportional to their holdings and their shares in COF"
+            content="1% of each transaction goes to COF holders, proportional to their holdings and their shares in COF."
           />
         </div>
       </div>
@@ -264,20 +264,21 @@ never before.
           />
           <TokenCard
             variant="stats"
-            titleOne="2%"
-            content="Added To Liquidity"
-          />
-          <TokenCard variant="stats" titleOne="1%" content="To Holders" />
-          <TokenCard
-            variant="stats"
             titleOne="10,000,000,000"
             content="Total Supply"
           />
+
           <TokenCard
             variant="stats"
             titleOne="3%"
             content="To marketing/development"
           />
+          <TokenCard
+            variant="stats"
+            titleOne="2%"
+            content="Added To Liquidity"
+          />
+          <TokenCard variant="stats" titleOne="1%" content="To Holders" />
         </div>
       </div>
       <Text>Cryptonlyfanz Contract Address:</Text>
@@ -308,14 +309,14 @@ never before.
               </Text>
             </li>
             <li>
-              <img src={check} alt="check" />
+              <img src={clock} alt="clock" />
               <Text>
                 Internal testing of features (posting, likes, comments,
                 messaging, profile setup etc.)
               </Text>
             </li>
             <li>
-              <img src={check} alt="check" />v{" "}
+              <img src={clock} alt="clock" />v{" "}
               <Text>Develop the premium bio-links page</Text>
             </li>
             <li>
@@ -358,15 +359,15 @@ never before.
           </Text>
           <ul>
             <li>
-              <img src={clock} alt="clock" />
+              <img src={check} alt="check" />
               <Text>COF token deployed to main net Audit</Text>
             </li>
             <li>
-              <img src={clock} alt="clock" />
+              <img src={check} alt="check" />
               <Text>Launched COF BEP-20 Token</Text>
             </li>
             <li>
-              <img src={clock} alt="clock" />
+              <img src={check} alt="check" />
               <Text>Created Whitepaper</Text>
             </li>
             <li>
@@ -417,7 +418,7 @@ never before.
             Admins/Mods will never message you first on TG! Meaning if you get a
             message with a contract address, please bring it to the team’s
             attention and do your due diligence. The address will be pinned to
-            the top of TG, as well asreleased on our website/socials for your
+            the top of TG, as well as released on our website/socials for your
             confirmation. The address released will only be utilized for the
             pre-sale and pre-sale only! Please do not attempt to send any sort
             of funds without doing the above process as it may result in a loss!
